@@ -1,18 +1,46 @@
-import { Instagram, Phone, MapPin } from "lucide-react";
+import { Instagram, Phone, MapPin, ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
     <footer data-testid="site-footer" className="border-t border-amber-500/15 bg-[#09090B] pt-20 pb-10 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-        <img
-          src="/flowclub-logo.png"
-          alt="Flow Club logo"
-          className="w-24 h-24 sm:w-28 sm:h-28 rounded-full object-cover mx-auto mb-8 ring-1 ring-[#D4AF37]/40"
-          data-testid="footer-logo"
-        />
-        <h2 className="font-serif-luxe italic text-[18vw] lg:text-[11rem] leading-none gold-text text-center select-none">
-          Flow Club
-        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          <button
+            data-testid="footer-flowclub-brand"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="group text-center py-8 md:py-4 md:pr-12 md:border-r md:border-amber-500/15"
+          >
+            <img
+              src="/flowclub-logo.png"
+              alt="Flow Club logo"
+              className="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover mx-auto mb-6 ring-1 ring-[#D4AF37]/40 group-hover:ring-[#D4AF37] transition-all duration-300"
+              data-testid="footer-logo"
+            />
+            <h2 className="font-serif-luxe italic text-5xl sm:text-6xl lg:text-7xl leading-none gold-text select-none">
+              Flow Club
+            </h2>
+            <p className="mt-4 font-mono-luxe text-[10px] tracking-[0.3em] text-zinc-500 uppercase">
+              Tonight&rsquo;s Destination
+            </p>
+          </button>
+
+          <Link
+            to="/pathankot-club"
+            data-testid="footer-pathankot-club-link"
+            className="group block text-center py-8 md:py-4 md:pl-12 border-t md:border-t-0 border-amber-500/15"
+          >
+            <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border border-[#D4AF37]/40 group-hover:border-[#D4AF37] flex items-center justify-center mx-auto mb-6 transition-all duration-300">
+              <span className="font-serif-luxe text-2xl sm:text-3xl gold-text font-semibold">PC</span>
+            </div>
+            <h2 className="font-serif-luxe italic text-5xl sm:text-6xl lg:text-7xl leading-none text-[#F7F5F0] group-hover:text-[#D4AF37] transition-colors duration-300 select-none">
+              Pathankot Club
+            </h2>
+            <p className="mt-4 font-mono-luxe text-[10px] tracking-[0.3em] text-zinc-500 group-hover:text-[#D4AF37]/80 uppercase transition-colors duration-300 inline-flex items-center gap-2">
+              Est. 1998 · The Heritage Club <ArrowUpRight size={12} />
+            </p>
+          </Link>
+        </div>
 
         <div className="hairline-gold my-12" />
 

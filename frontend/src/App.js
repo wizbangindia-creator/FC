@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "@/App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Lenis from "lenis";
 import { AnimatePresence } from "framer-motion";
 import { Toaster } from "@/components/ui/sonner";
@@ -15,8 +16,9 @@ import Booking from "@/components/Booking";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import PathankotClub from "@/pages/PathankotClub";
 
-function App() {
+function HomePage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -41,8 +43,7 @@ function App() {
   }, [loading]);
 
   return (
-    <div className="App min-h-screen bg-[#09090B] text-[#F7F5F0]">
-      <div className="grain-overlay" />
+    <>
       <AnimatePresence>
         {loading && <Preloader onComplete={() => setLoading(false)} />}
       </AnimatePresence>
@@ -61,9 +62,23 @@ function App() {
           </main>
           <Footer />
           <WhatsAppButton />
-          <Toaster position="top-center" theme="dark" />
         </>
       )}
+    </>
+  );
+}
+
+function App() {
+  return (
+    <div className="App min-h-screen bg-[#09090B] text-[#F7F5F0]">
+      <div className="grain-overlay" />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/pathankot-club" element={<PathankotClub />} />
+        </Routes>
+      </BrowserRouter>
+      <Toaster position="top-center" theme="dark" />
     </div>
   );
 }

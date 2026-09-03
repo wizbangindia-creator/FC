@@ -30,7 +30,10 @@ Build a very beautiful website for Flow Club, a disco club + restaurant in Adhun
 - Real Flow Club logo integrated: navbar, footer, gallery Instagram band, favicon + page title/meta
 - Instagram: "Follow the night — @flowclub__" band in gallery linking to https://www.instagram.com/flowclub__ (profile link-out; live auto-feed requires Meta Graph API token — deferred)
 
-## Updates (2026-07, iteration 4)
+## Updates (2026-07, iteration 5)
+- Footer split into two brand halves: Flow Club (logo, scroll-to-top) | Pathankot Club (gold "PC" crest placeholder — real logo pending) linking to /pathankot-club
+- New /pathankot-club page (react-router): hero with masked reveal + PC crest, custom marquee, chapters — 01 The Institution (CIN U92490PB1998PLC021677, ROC Chandigarh, est. 1998, active), 02 Facilities (13 amenities grid), 03 Stay & Dine (10 rooms: 8 Deluxe + 2 Suites, 3-star listing, ~₹350/2 listing estimate), 04 Two Destinations (Flow vs Pathankot positioning), 05 Visit (1 Dalhousie Road, 0186-2247500 / 0186-2247600, 3.8★/396 reviews); Wizbang credit included. Marquee component now accepts items prop.
+- Navbar: wordmark text removed, logo only
 - Animated preloader: obsidian screen, logo pop-in, letter-by-letter "FLOW CLUB" masked reveal, gold progress line + percentage counter, curtain-lift exit into the hero; page scroll locked during load
 - Footer credit: "Designed & Developed by Wizbang India" (very small, links to https://www.wizbang.in, opens in new tab)
 - Real venue photography integrated: hero background = B&W packed dance-floor crowd shot (venue-crowd.webp, wide); Events: Saturday Flow = crowd photo, Unplugged Evenings = live band photo; Gallery leads with real venue shots (crowd, singers, band) mixed with lounge ambiance stock. Files in /app/frontend/public/venue-*.webp. Singer-with-balloons shot (venue-hero.webp) lives in the gallery.

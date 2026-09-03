@@ -9,10 +9,10 @@ const ITEMS = [
   "12 PM — 12 AM DAILY",
 ];
 
-function Strip() {
+function Strip({ items }) {
   return (
     <div className="flex shrink-0 items-center">
-      {ITEMS.map((item) => (
+      {items.map((item) => (
         <span key={item} className="flex items-center">
           <span className="font-serif-luxe italic text-2xl sm:text-3xl text-[#F7F5F0]/90 px-6 whitespace-nowrap">
             {item}
@@ -24,15 +24,15 @@ function Strip() {
   );
 }
 
-export default function Marquee() {
+export default function Marquee({ items = ITEMS }) {
   return (
     <div
       data-testid="editorial-marquee"
       className="relative overflow-hidden border-y border-amber-500/15 bg-[#0D0D10] py-5"
     >
       <div className="animate-marquee flex w-max">
-        <Strip />
-        <Strip />
+        <Strip items={items} />
+        <Strip items={items} />
       </div>
     </div>
   );
