@@ -25,6 +25,7 @@ Build a very beautiful website for Flow Club, a disco club + restaurant in Adhun
 
 ## Pending / Requires User
 - OWNER_EMAIL in /app/backend/.env is currently TEST address delivered@resend.dev — replace with the owner's real email for production notifications
+- Deployment: user is self-hosting on Hostinger VPS via GitHub. Production domain: flowclub.in. Before deploying, email code must be swapped from Emergent-managed email key to user's own Resend account (RESEND_API_KEY), sender domain flowclub.in. VPS backend port: 8200 (8001 already in use there). Env on VPS: REACT_APP_BACKEND_URL=https://flowclub.in, CORS_ORIGINS=https://flowclub.in
 
 ## Updates (2026-07, iteration 2)
 - Real Flow Club logo integrated: navbar, footer, gallery Instagram band, favicon + page title/meta
