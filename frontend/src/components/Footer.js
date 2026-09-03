@@ -48,6 +48,17 @@ export default function Footer() {
         <p className="text-center font-mono-luxe text-[10px] tracking-[0.25em] text-zinc-600 uppercase">
           © {new Date().getFullYear()} Flow Club · Pathankot&rsquo;s Nightlife
         </p>
+        <p className="text-center mt-3">
+          <a
+            data-testid="footer-credit-wizbang"
+            href="https://www.wizbang.in"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-mono-luxe text-[9px] tracking-[0.2em] text-zinc-700 hover:text-[#D4AF37] transition-colors duration-300 uppercase"
+          >
+            Designed &amp; Developed by Wizbang India
+          </a>
+        </p>
       </div>
     </footer>
   );
