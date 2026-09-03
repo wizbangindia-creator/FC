@@ -29,11 +29,8 @@ export default function Navbar() {
           <img
             src="/flowclub-logo.png"
             alt="Flow Club logo"
-            className="w-9 h-9 sm:w-10 sm:h-10 rounded-full object-cover ring-1 ring-[#D4AF37]/50 group-hover:ring-[#D4AF37] transition-all duration-300"
+            className="w-9 h-9 sm:w-11 sm:h-11 rounded-full object-cover ring-1 ring-[#D4AF37]/50 group-hover:ring-[#D4AF37] transition-all duration-300"
           />
-          <span className="font-syne font-extrabold tracking-[0.22em] text-sm sm:text-base text-[#F7F5F0]">
-            FLOW<span className="gold-text">CLUB</span>
-          </span>
         </button>
 
         <nav className="hidden lg:flex items-center gap-8">
