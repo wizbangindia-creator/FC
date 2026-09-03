@@ -30,7 +30,10 @@ Build a very beautiful website for Flow Club, a disco club + restaurant in Adhun
 - Real Flow Club logo integrated: navbar, footer, gallery Instagram band, favicon + page title/meta
 - Instagram: "Follow the night — @flowclub__" band in gallery linking to https://www.instagram.com/flowclub__ (profile link-out; live auto-feed requires Meta Graph API token — deferred)
 
-## Updates (2026-07, iteration 5)
+## Updates (2026-07, iteration 6)
+- Real Pathankot Club crest logo integrated: footer split half + /pathankot-club hero (/app/frontend/public/pathankot-club-logo.png)
+- Removed "The Institution" (corporate/CIN) section from Pathankot Club page; chapters renumbered 01 Facilities, 02 Stay & Dine, 03 Two Destinations, 04 Visit
+- Wizbang credit line color changed to gold (#D4AF37/70) on both footers
 - Footer split into two brand halves: Flow Club (logo, scroll-to-top) | Pathankot Club (gold "PC" crest placeholder — real logo pending) linking to /pathankot-club
 - New /pathankot-club page (react-router): hero with masked reveal + PC crest, custom marquee, chapters — 01 The Institution (CIN U92490PB1998PLC021677, ROC Chandigarh, est. 1998, active), 02 Facilities (13 amenities grid), 03 Stay & Dine (10 rooms: 8 Deluxe + 2 Suites, 3-star listing, ~₹350/2 listing estimate), 04 Two Destinations (Flow vs Pathankot positioning), 05 Visit (1 Dalhousie Road, 0186-2247500 / 0186-2247600, 3.8★/396 reviews); Wizbang credit included. Marquee component now accepts items prop.
 - Navbar: wordmark text removed, logo only

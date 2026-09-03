@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import {
   Waves, CircleDot, Target, Zap, Flame, Layers, Dumbbell, Scissors,
   Wine, UtensilsCrossed, Trees, GlassWater, BedDouble, Star, MapPin,
-  Phone, Navigation, ArrowLeft, ArrowUpRight, Shield,
+  Phone, Navigation, ArrowLeft, ArrowUpRight,
 } from "lucide-react";
 import { Reveal, ChapterHeading, EASE } from "@/components/Reveal";
 import Marquee from "@/components/Marquee";
@@ -24,15 +24,6 @@ const FACILITIES = [
   { icon: Trees, name: "Party Lawns" },
   { icon: GlassWater, name: "Poolside Hall" },
   { icon: BedDouble, name: "Guest Accommodation" },
-];
-
-const CORPORATE = [
-  { label: "Incorporated", value: "1998" },
-  { label: "Status", value: "Active" },
-  { label: "CIN", value: "U92490PB1998PLC021677" },
-  { label: "ROC", value: "Chandigarh" },
-  { label: "Entity", value: "Pathankot Club Limited" },
-  { label: "Type", value: "Company limited by guarantee" },
 ];
 
 function MaskedLine({ children, index, className }) {
@@ -89,15 +80,15 @@ export default function PathankotClub() {
       <section className="relative min-h-[92vh] flex items-end overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,#1A1A1E_0%,#09090B_65%)]" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 pb-20 w-full pt-32">
-          <motion.div
+          <motion.img
+            src="/pathankot-club-logo.png"
+            alt="Pathankot Club logo"
+            data-testid="pc-crest"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.9, ease: EASE }}
-            className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border border-[#D4AF37]/50 flex items-center justify-center mb-8"
-            data-testid="pc-crest"
-          >
-            <span className="font-serif-luxe text-2xl sm:text-3xl gold-text font-semibold">PC</span>
-          </motion.div>
+            className="w-24 h-24 sm:w-28 sm:h-28 rounded-full object-cover ring-1 ring-[#D4AF37]/50 mb-8"
+          />
 
           <motion.p
             initial={{ opacity: 0 }}
@@ -146,41 +137,9 @@ export default function PathankotClub() {
 
       <Marquee items={["PATHANKOT CLUB", "EST. 1998", "RECREATION & HOSPITALITY", "MEMBERSHIP CLUB", "DALHOUSIE ROAD", "POOL · GYM · BILLIARDS"]} />
 
-      <section className="py-24 sm:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-          <ChapterHeading number="01" title="The Institution" subtitle="A formally incorporated club, active since 1998." />
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
-            <Reveal className="lg:col-span-5">
-              <p className="text-base sm:text-lg leading-relaxed text-zinc-300">
-                Pathankot Club Limited is a registered recreational club company —
-                not just a restaurant or a bar. It is listed among the affiliated
-                clubs of the Punjab–Haryana club network, and operates as a
-                membership-first institution for recreation and hospitality.
-              </p>
-              <div className="mt-6 inline-flex items-center gap-3 border border-amber-500/25 px-5 py-3">
-                <Shield size={14} className="text-[#D4AF37]" />
-                <span className="font-mono-luxe text-[10px] sm:text-xs tracking-[0.25em] text-[#D4AF37]">
-                  AFFILIATED CLUB NETWORK · PUNJAB & HARYANA
-                </span>
-              </div>
-            </Reveal>
-            <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-px bg-amber-500/10 border border-amber-500/10">
-              {CORPORATE.map((c, i) => (
-                <Reveal key={c.label} delay={0.05 * i}>
-                  <div data-testid={`pc-corporate-${i}`} className="bg-[#121215] p-6 h-full">
-                    <p className="font-mono-luxe text-[10px] tracking-[0.3em] text-zinc-500 uppercase mb-2">{c.label}</p>
-                    <p className="font-serif-luxe text-lg sm:text-xl text-[#F7F5F0] break-words">{c.value}</p>
-                  </div>
-                </Reveal>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className="py-24 sm:py-32 bg-[#0D0D10]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-          <ChapterHeading number="02" title="The Facilities" subtitle="Thirteen ways to spend a slow afternoon." />
+          <ChapterHeading number="01" title="The Facilities" subtitle="Thirteen ways to spend a slow afternoon." />
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-px bg-amber-500/10 border border-amber-500/10">
             {FACILITIES.map((f, i) => (
               <Reveal key={f.name} delay={0.03 * i}>
@@ -201,7 +160,7 @@ export default function PathankotClub() {
 
       <section className="py-24 sm:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-          <ChapterHeading number="03" title="Stay & Dine" subtitle="Rooms above the lawns, dinner below the stars." />
+          <ChapterHeading number="02" title="Stay & Dine" subtitle="Rooms above the lawns, dinner below the stars." />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             {[
               { title: "Guest Accommodation", desc: "10 rooms — 8 Deluxe and 2 Suites — listed in the affiliated-club network, with parking and Wi-Fi. Listed as a 3-star hospitality property.", tag: "STAY" },
@@ -222,7 +181,7 @@ export default function PathankotClub() {
 
       <section className="py-24 sm:py-32 bg-[#0D0D10] border-y border-amber-500/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-          <ChapterHeading number="04" title="Two Destinations" subtitle="Same neighbourhood. Different nights." />
+          <ChapterHeading number="03" title="Two Destinations" subtitle="Same neighbourhood. Different nights." />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-amber-500/10 border border-amber-500/10">
             <Reveal>
               <div className="bg-[#121215] p-8 sm:p-12 h-full">
@@ -250,7 +209,7 @@ export default function PathankotClub() {
 
       <section className="py-24 sm:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-          <ChapterHeading number="05" title="Visit" subtitle="Dalhousie Road, Mamun — the quiet side of the cluster." />
+          <ChapterHeading number="04" title="Visit" subtitle="Dalhousie Road, Mamun — the quiet side of the cluster." />
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
             {[
               { icon: MapPin, title: "Address", lines: ["1, Dalhousie Road, Adhunik Vihar", "Mamun, Pathankot, Punjab 145001"], testid: "pc-address-card" },
@@ -302,7 +261,7 @@ export default function PathankotClub() {
               href="https://www.wizbang.in"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-mono-luxe text-[9px] tracking-[0.2em] text-zinc-700 hover:text-[#D4AF37] transition-colors duration-300 uppercase"
+              className="font-mono-luxe text-[9px] tracking-[0.2em] text-[#D4AF37]/70 hover:text-[#D4AF37] transition-colors duration-300 uppercase"
             >
               Designed &amp; Developed by Wizbang India
             </a>

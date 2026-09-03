@@ -30,9 +30,11 @@ export default function Footer() {
             data-testid="footer-pathankot-club-link"
             className="group block text-center py-8 md:py-4 md:pl-12 border-t md:border-t-0 border-amber-500/15"
           >
-            <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border border-[#D4AF37]/40 group-hover:border-[#D4AF37] flex items-center justify-center mx-auto mb-6 transition-all duration-300">
-              <span className="font-serif-luxe text-2xl sm:text-3xl gold-text font-semibold">PC</span>
-            </div>
+            <img
+              src="/pathankot-club-logo.png"
+              alt="Pathankot Club logo"
+              className="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover mx-auto mb-6 ring-1 ring-[#D4AF37]/40 group-hover:ring-[#D4AF37] transition-all duration-300"
+            />
             <h2 className="font-serif-luxe italic text-5xl sm:text-6xl lg:text-7xl leading-none text-[#F7F5F0] group-hover:text-[#D4AF37] transition-colors duration-300 select-none">
               Pathankot Club
             </h2>
@@ -82,7 +84,7 @@ export default function Footer() {
             href="https://www.wizbang.in"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-mono-luxe text-[9px] tracking-[0.2em] text-zinc-700 hover:text-[#D4AF37] transition-colors duration-300 uppercase"
+            className="font-mono-luxe text-[9px] tracking-[0.2em] text-[#D4AF37]/70 hover:text-[#D4AF37] transition-colors duration-300 uppercase"
           >
             Designed &amp; Developed by Wizbang India
           </a>
