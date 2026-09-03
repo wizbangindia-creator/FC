@@ -31,7 +31,7 @@ Build a very beautiful website for Flow Club, a disco club + restaurant in Adhun
 - Instagram: "Follow the night — @flowclub__" band in gallery linking to https://www.instagram.com/flowclub__ (profile link-out; live auto-feed requires Meta Graph API token — deferred)
 
 ## Updates (2026-07, iteration 3)
-- Real venue photography integrated: hero background = B&W singer w/ guitar (venue-hero.webp); Events: Saturday Flow = crowd photo, Unplugged Evenings = live band photo; Gallery now leads with real venue shots (crowd, singers, band) mixed with lounge ambiance stock. Files in /app/frontend/public/venue-*.webp
+- Real venue photography integrated: hero background = B&W packed dance-floor crowd shot (venue-crowd.webp, wide); Events: Saturday Flow = crowd photo, Unplugged Evenings = live band photo; Gallery leads with real venue shots (crowd, singers, band) mixed with lounge ambiance stock. Files in /app/frontend/public/venue-*.webp. Singer-with-balloons shot (venue-hero.webp) lives in the gallery.
 
 ## Backlog
 - P0: Real owner email for notifications; real logo swap

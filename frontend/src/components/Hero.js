@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Star, MapPin, ArrowDown } from "lucide-react";
 import { EASE } from "@/components/Reveal";
 
-const HERO_IMG = "/venue-hero.webp";
+const HERO_IMG = "/venue-crowd.webp";
 
 function MaskedLine({ children, index, className }) {
   return (
@@ -30,7 +30,7 @@ export default function Hero() {
   return (
     <section ref={ref} data-testid="hero-section" className="relative min-h-screen flex items-end overflow-hidden">
       <motion.div style={{ y: bgY, scale: bgScale }} className="absolute inset-0">
-        <img src={HERO_IMG} alt="Live singer performing at Flow Club Pathankot" className="w-full h-full object-cover object-[center_20%]" />
+        <img src={HERO_IMG} alt="The Flow Club floor packed mid-celebration" className="w-full h-full object-cover object-center" />
       </motion.div>
       <div className="absolute inset-0 bg-gradient-to-t from-[#09090B] via-[#09090B]/55 to-[#09090B]/30" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_35%,#09090B_100%)]" />
