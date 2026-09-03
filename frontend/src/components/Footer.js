@@ -4,6 +4,12 @@ export default function Footer() {
   return (
     <footer data-testid="site-footer" className="border-t border-amber-500/15 bg-[#09090B] pt-20 pb-10 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+        <img
+          src="/flowclub-logo.png"
+          alt="Flow Club logo"
+          className="w-24 h-24 sm:w-28 sm:h-28 rounded-full object-cover mx-auto mb-8 ring-1 ring-[#D4AF37]/40"
+          data-testid="footer-logo"
+        />
         <h2 className="font-serif-luxe italic text-[18vw] lg:text-[11rem] leading-none gold-text text-center select-none">
           Flow Club
         </h2>

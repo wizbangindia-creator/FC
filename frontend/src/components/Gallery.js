@@ -46,10 +46,27 @@ export default function Gallery() {
             href="https://www.instagram.com/flowclub__"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-12 inline-flex items-center gap-3 text-xs tracking-[0.25em] uppercase text-zinc-400 hover:text-[#D4AF37] transition-colors duration-300"
+            className="mt-14 flex items-center justify-between gap-6 border border-amber-500/20 bg-[#121215] p-6 sm:p-8 group hover:border-[#D4AF37]/60 transition-colors duration-500"
           >
-            <Instagram size={16} />
-            More on Instagram — @flowclub__
+            <div className="flex items-center gap-5">
+              <img
+                src="/flowclub-logo.png"
+                alt="Flow Club on Instagram"
+                className="w-14 h-14 rounded-full object-cover ring-1 ring-[#D4AF37]/40"
+              />
+              <div>
+                <p className="font-mono-luxe text-[10px] tracking-[0.3em] text-[#D4AF37] uppercase mb-1.5">
+                  Follow the night
+                </p>
+                <p className="font-serif-luxe text-xl sm:text-2xl text-[#F7F5F0] group-hover:text-[#D4AF37] transition-colors duration-300">
+                  @flowclub__ on Instagram
+                </p>
+                <p className="text-xs text-zinc-500 mt-1">Lineup drops, event aftermovies & nightly stories</p>
+              </div>
+            </div>
+            <span className="hidden sm:flex items-center gap-2 text-xs tracking-[0.25em] uppercase text-zinc-400 group-hover:text-[#D4AF37] transition-colors duration-300 shrink-0">
+              <Instagram size={16} /> Follow
+            </span>
           </a>
         </Reveal>
       </div>

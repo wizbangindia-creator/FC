@@ -26,7 +26,11 @@ export default function Navbar() {
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="flex items-center gap-2 group"
         >
-          <span className="w-1.5 h-1.5 rounded-full bg-[#D4AF37] animate-pulse-gold" />
+          <img
+            src="/flowclub-logo.png"
+            alt="Flow Club logo"
+            className="w-9 h-9 sm:w-10 sm:h-10 rounded-full object-cover ring-1 ring-[#D4AF37]/50 group-hover:ring-[#D4AF37] transition-all duration-300"
+          />
           <span className="font-syne font-extrabold tracking-[0.22em] text-sm sm:text-base text-[#F7F5F0]">
             FLOW<span className="gold-text">CLUB</span>
           </span>

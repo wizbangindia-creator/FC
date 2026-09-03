@@ -25,7 +25,10 @@ Build a very beautiful website for Flow Club, a disco club + restaurant in Adhun
 
 ## Pending / Requires User
 - OWNER_EMAIL in /app/backend/.env is currently TEST address delivered@resend.dev — replace with the owner's real email for production notifications
-- User's real logo attachment never arrived — replace wordmark when provided
+
+## Updates (2026-07, iteration 2)
+- Real Flow Club logo integrated: navbar, footer, gallery Instagram band, favicon + page title/meta
+- Instagram: "Follow the night — @flowclub__" band in gallery linking to https://www.instagram.com/flowclub__ (profile link-out; live auto-feed requires Meta Graph API token — deferred)
 
 ## Backlog
 - P0: Real owner email for notifications; real logo swap
