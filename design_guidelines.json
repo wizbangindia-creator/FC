@@ -1,0 +1,251 @@
+{
+  "project_name": "Flow Club Pathankot",
+  "app_type": "marketing_site / luxe nightlife & dining venue",
+  "vibe": "Luxe Lounge (Deep Obsidian, Warm Champagne Gold, Velvet Accent, High-end Editorial)",
+  "theme": {
+    "default_mode": "dark",
+    "theme_toggle_supported": true,
+    "background_color": "#09090B",
+    "card_background": "#121215",
+    "text_primary": "#F7F5F0",
+    "text_secondary": "#A1A1AA"
+  },
+  "typography": {
+    "fonts": {
+      "display": {
+        "family": "Cormorant Garamond, serif",
+        "google_import": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap",
+        "usage": "Main Section Headings, Hero Wordmark, Numbered Manifesto Titles (01, 02...)"
+      },
+      "subdisplay": {
+        "family": "Syne, sans-serif",
+        "google_import": "https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&display=swap",
+        "usage": "Kinetic Hero Accents, Event Lineup Headers, Modern High-Impact Badges"
+      },
+      "body": {
+        "family": "Plus Jakarta Sans, sans-serif",
+        "usage": "Body text, Navigation links, Form fields, Timings, Contact details"
+      },
+      "mono": {
+        "family": "JetBrains Mono, monospace",
+        "usage": "Manifesto numbers, coordinates, timestamps, Google Rating stats (4.4/5)"
+      }
+    },
+    "scale": {
+      "h1_hero": "text-4xl sm:text-6xl lg:text-7xl font-light tracking-tight leading-tight",
+      "h2_section": "text-3xl sm:text-4xl lg:text-5xl font-serif tracking-tight",
+      "h3_card": "text-xl sm:text-2xl font-serif font-medium",
+      "body_lg": "text-base sm:text-lg leading-relaxed text-zinc-300",
+      "body_sm": "text-xs sm:text-sm text-zinc-400 leading-normal",
+      "label": "text-xs uppercase tracking-[0.25em] font-semibold text-amber-300/80"
+    }
+  },
+  "colors": {
+    "hex": {
+      "bg_dark": "#09090B",
+      "bg_card": "#121215",
+      "bg_elevated": "#1A1A1E",
+      "gold_primary": "#D4AF37",
+      "gold_light": "#F3E5AB",
+      "gold_glow": "#E5C158",
+      "champagne": "#F7F5F0",
+      "bronze_border": "rgba(212, 175, 55, 0.25)",
+      "velvet_accent": "#3D0C1A",
+      "emerald_accent": "#0D2818",
+      "text_main": "#F7F5F0",
+      "text_muted": "#9CA3AF"
+    },
+    "css_variables": {
+      "--background": "0 0% 4%",
+      "--foreground": "40 20% 96%",
+      "--card": "240 6% 7%",
+      "--card-foreground": "40 20% 96%",
+      "--primary": "46 65% 52%",
+      "--primary-foreground": "0 0% 4%",
+      "--secondary": "240 4% 12%",
+      "--secondary-foreground": "40 20% 96%",
+      "--muted": "240 4% 16%",
+      "--muted-foreground": "240 5% 65%",
+      "--accent": "46 65% 52%",
+      "--accent-foreground": "0 0% 4%",
+      "--border": "46 30% 20%",
+      "--ring": "46 65% 52%"
+    }
+  },
+  "layout_and_grid": {
+    "container_max_width": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-12",
+    "spacing_scale": {
+      "section_gap": "py-24 sm:py-32",
+      "element_gap": "gap-8 sm:gap-12",
+      "card_padding": "p-6 sm:p-8"
+    },
+    "bento_grid_specs": {
+      "mode": "MODE A: Tetris Grid (Asymmetric High Impact)",
+      "columns": "grid-cols-1 md:grid-cols-12",
+      "gap": "gap-6 sm:gap-8"
+    }
+  },
+  "sections_blueprint": [
+    {
+      "id": "nav",
+      "name": "Floating Glass Navigation",
+      "features": [
+        "Backdrop blur crystal glass header (backdrop-blur-xl bg-black/70 border-b border-amber-500/20)",
+        "Custom FLOW CLUB typographic wordmark with glowing amber dot",
+        "Quick Nav links (The Vibe, Dining & Drinks, Events, Gallery, Book Table)",
+        "Call Us button (+91 95390 80001) & Table RSVP trigger CTA",
+        "Mobile overlay menu with smooth stagger animation"
+      ]
+    },
+    {
+      "id": "hero",
+      "name": "Cinematic Hero & Kinetic Reveal",
+      "features": [
+        "On-load line-by-line masked kinetic text reveal ('EPICENTER OF NIGHTLIFE IN PATHANKOT')",
+        "Background atmospheric lighting & ambient video/high-res mood slider",
+        "Floating venue metadata badge: 'Google 4.4★ (299+ Reviews) • Mamun, Pathankot'",
+        "Primary CTA: 'Reserve VIP Table' & Secondary CTA: 'Explore Tonight’s Lineup'",
+        "Subtle floating scroll indicator with sound-toggle ambient wave animation"
+      ]
+    },
+    {
+      "id": "marquee",
+      "name": "Editorial Ribbon Marquee",
+      "features": [
+        "Slow luxury drift with serif text & gold star separators",
+        "Copy: 'FLOW CLUB PATHANKOT • DISCO & GOURMET DINING • LIVE MUSIC • COMEDY NIGHTS • CELEBRATION DISCO • 12 PM - 12 AM DAILY'"
+      ]
+    },
+    {
+      "id": "manifesto_01",
+      "name": "Chapter 01 — The Vibe & Atmosphere",
+      "features": [
+        "Numbered chapter layout: '01 / THE EXPERIENCE'",
+        "Deep narrative on Pathankot's premier party & dining venue",
+        "Interactive feature cards: High-energy Disco Floor, Luxe VIP Booths, Artisanal Bar, Terrace Ambient Seating",
+        "Spend benchmark tag: ₹400 – ₹1,600 per guest • Open 12 PM to 12 AM"
+      ]
+    },
+    {
+      "id": "manifesto_02",
+      "name": "Chapter 02 — Food & Drink Menu Highlights",
+      "features": [
+        "Numbered chapter layout: '02 / CULINARY & COCKTAILS'",
+        "Tabbed category view: Signature Cocktails, Gourmet Mains, Small Plates & Snacks, Premium Spirits",
+        "Spotlight card with price tags & ingredient highlights",
+        "Download Full Menu PDF trigger / Interactive modal viewer"
+      ]
+    },
+    {
+      "id": "manifesto_03",
+      "name": "Chapter 03 — Nights & Live Events Lineup",
+      "features": [
+        "Numbered chapter layout: '03 / NIGHTS & LINEUP'",
+        "Filterable event cards: DJ Nights, Live Acoustic, Standup Comedy, Weekend Disco Party",
+        "Event detail drawers: Artist name, date, time, entry details, RSVP button",
+        "Direct RSVP trigger modal connected to booking system"
+      ]
+    },
+    {
+      "id": "manifesto_04",
+      "name": "Chapter 04 — Visual Gallery (Spotlight Frames)",
+      "features": [
+        "Numbered chapter layout: '04 / VISUAL ARCHIVE'",
+        "Custom clipped-frame masonry grid with hover spotlight expansion",
+        "Full-screen Lightbox viewer with high-resolution party & dining photography",
+        "Instagram feed ribbon (@flowclub__ integration hook)"
+      ]
+    },
+    {
+      "id": "manifesto_05",
+      "name": "Chapter 05 — Reserve / Book a Table",
+      "features": [
+        "Numbered chapter layout: '05 / RESERVATIONS & VIP'",
+        "Full interactive booking form: Name, Phone, Email, Date (Shadcn Calendar), Time, Guests, Occasion (Birthday, Anniversary, VIP Party, Casual Dining), Special Requests",
+        "Instant confirmation toast (Sonner) + Database sync mock + Direct WhatsApp confirmation pre-fill link",
+        "Auto email notification dispatch simulation"
+      ]
+    },
+    {
+      "id": "location_contact",
+      "name": "Location, Hours & Direct Contact",
+      "features": [
+        "Address card: Adhunik Vihar, Mamun, Pathankot, Punjab 145001",
+        "Operating hours highlight: 12:00 PM – 12:00 AM (Daily)",
+        "Direct Phone call button: +91 95390 80001",
+        "Custom styled dark map view / Google Maps direction link button"
+      ]
+    },
+    {
+      "id": "whatsapp_floating",
+      "name": "Floating WhatsApp VIP Button",
+      "features": [
+        "Floating bottom-right button with pulse animation & notification badge",
+        "Direct link to wa.me/919539080001 with pre-filled greeting message ('Hi Flow Club, I would like to reserve a table/inquire about an event')"
+      ]
+    },
+    {
+      "id": "footer",
+      "name": "Editorial Luxury Footer",
+      "features": [
+        "Massive kinetic brand title 'FLOW CLUB'",
+        "Quick links, operating times, address, Instagram (@flowclub__)",
+        "Copyright & Pathankot nightlife credit"
+      ]
+    }
+  ],
+  "image_urls": {
+    "hero_background": "https://images.unsplash.com/photo-1774989423979-6a7bf5add3f0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjBuaWdodGNsdWIlMjBwYXJ0eSUyMGxvdW5nZSUyMGdvbGQlMjBsaWdodCUyMG1vb2R8ZW58MHx8fHwxNzg4NDIzOTI3fDA&ixlib=rb-4.1.0&q=85",
+    "lounge_interior_1": "https://images.unsplash.com/photo-1659626672821-e64c8a510e26?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBuaWdodGNsdWIlMjBwYXJ0eSUyMGxvdW5nZSUyMGdvbGQlMjBsaWdodCUyMG1vb2R8ZW58MHx8fHwxNzg4NDIzOTI3fDA&ixlib=rb-4.1.0&q=85",
+    "table_ambiance": "https://images.unsplash.com/photo-1582387914300-c398d3feb160?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBuaWdodGNsdWIlMjBwYXJ0eSUyMGxvdW5nZSUyMGdvbGQlMjBsaWdodCUyMG1vb2R8ZW58MHx8fHwxNzg4NDIzOTI3fDA&ixlib=rb-4.1.0&q=85",
+    "cocktail_signature": "https://images.unsplash.com/photo-1700909591006-a78674596074?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTV8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjBjb2NrdGFpbCUyMGJhciUyMGRyaW5rJTIwZ29sZCUyMGF0bW9zcGhlcmV8ZW58MHx8fHwxNzg4NDIzOTM2fDA&ixlib=rb-4.1.0&q=85",
+    "bar_counter": "https://images.unsplash.com/photo-1768949005507-8c0f571285f4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTV8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBjb2NrdGFpbCUyMGJhciUyMGRyaW5rJTIwZ29sZCUyMGF0bW9zcGhlcmV8ZW58MHx8fHwxNzg4NDIzOTM2fDA&ixlib=rb-4.1.0&q=85",
+    "gold_rack": "https://images.unsplash.com/photo-1769781383545-6b60e30eb88c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTV8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjBjb2NrdGFpbCUyMGJhciUyMGRyaW5rJTIwZ29sZCUyMGF0bW9zcGhlcmV8ZW58MHx8fHwxNzg4NDIzOTM2fDA&ixlib=rb-4.1.0&q=85",
+    "dj_performance": "https://images.unsplash.com/photo-1541126274323-dbac58d14741?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwyfHxkaiUyMHBlcmZvcm1pbmclMjBwYXJ0eSUyMGxpZ2h0aW5nJTIwc3RhZ2UlMjBuaWdodGNsdWIlMjBjb25jZXJ0fGVufDB8fHx8MTc4ODQyMzkzNnww&ixlib=rb-4.1.0&q=85",
+    "party_crowd": "https://images.unsplash.com/photo-1574155376612-bfa4ed8aabfd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHw0fHxkaiUyMHBlcmZvcm1pbmclMjBwYXJ0eSUyMGxpZ2h0aW5nJTIwc3RhZ2UlMjBuaWdodGNsdWIlMjBjb25jZXJ0fGVufDB8fHx8MTc4ODQyMzkzNnww&ixlib=rb-4.1.0&q=85",
+    "dj_console": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwxfHxkaiUyMHBlcmZvcm1pbmclMjBwYXJ0eSUyMGxpZ2h0aW5nJTIwc3RhZ2UlMjBuaWdodGNsdWIlMjBjb25jZXJ0fGVufDB8fHx8MTc4ODQyMzkzNnww&ixlib=rb-4.1.0&q=85"
+  },
+  "motion_specs": {
+    "libraries": ["framer-motion", "lucide-react", "sonner"],
+    "kinetic_typography": {
+      "stagger_children": 0.12,
+      "duration": 0.9,
+      "ease": [0.25, 1, 0.5, 1]
+    },
+    "scroll_reveal": {
+      "viewport_once": true,
+      "margin": "-80px"
+    },
+    "hover_transitions": "transition-all duration-300 ease-out"
+  },
+  "testing": {
+    "data_testid_convention": "kebab-case, role-based, e.g., nav-reserve-button, booking-form-submit, event-card-rsvp, whatsapp-floating-button",
+    "required_test_ids": [
+      "nav-brand-logo",
+      "nav-link-vibe",
+      "nav-link-dining",
+      "nav-link-events",
+      "nav-link-gallery",
+      "nav-link-reserve",
+      "hero-reserve-cta",
+      "booking-form-name-input",
+      "booking-form-phone-input",
+      "booking-form-email-input",
+      "booking-form-date-picker",
+      "booking-form-time-select",
+      "booking-form-guests-select",
+      "booking-form-submit-button",
+      "whatsapp-floating-button",
+      "contact-phone-link",
+      "contact-directions-button"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Strictly follow the Luxe Lounge aesthetic with dark obsidian backgrounds, gold accents, and Cormorant Garamond / Syne display typography.",
+    "Implement JS component files (.js) in /app/frontend/src/",
+    "Ensure all key buttons, inputs, links, forms, and cards have explicit data-testid attributes.",
+    "Use sonner for form toast notifications.",
+    "Ensure floating WhatsApp button stays accessible at bottom-right with high z-index.",
+    "Include mock storage and email dispatch notifications on successful table bookings."
+  ]
+}
