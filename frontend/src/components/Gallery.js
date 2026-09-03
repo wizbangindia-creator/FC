@@ -4,12 +4,12 @@ import { Instagram, X } from "lucide-react";
 import { Reveal, ChapterHeading, EASE } from "@/components/Reveal";
 
 const IMAGES = [
-  { src: "https://images.unsplash.com/photo-1659626672821-e64c8a510e26?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBuaWdodGNsdWIlMjBwYXJ0eSUyMGxvdW5nZSUyMGdvbGQlMjBsaWdodCUyMG1vb2R8ZW58MHx8fHwxNzg4NDIzOTI3fDA&ixlib=rb-4.1.0&q=85", alt: "Lounge interior in gold light", span: "md:col-span-7" },
+  { src: "/venue-crowd.webp", alt: "The Flow Club floor mid-celebration", span: "md:col-span-7" },
   { src: "https://images.unsplash.com/photo-1582387914300-c398d3feb160?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBuaWdodGNsdWIlMjBwYXJ0eSUyMGxvdW5nZSUyMGdvbGQlMjBsaWdodCUyMG1vb2R8ZW58MHx8fHwxNzg4NDIzOTI3fDA&ixlib=rb-4.1.0&q=85", alt: "Candlelit table ambiance", span: "md:col-span-5" },
-  { src: "https://images.unsplash.com/photo-1768949005507-8c0f571285f4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTV8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBjb2NrdGFpbCUyMGJhciUyMGRyaW5rJTIwZ29sZCUyMGF0bW9zcGhlcmV8ZW58MHx8fHwxNzg4NDIzOTM2fDA&ixlib=rb-4.1.0&q=85", alt: "The bar counter at night", span: "md:col-span-5" },
-  { src: "https://images.unsplash.com/photo-1541126274323-dbac58d14741?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwyfHxkaiUyMHBlcmZvcm1pbmclMjBwYXJ0eSUyMGxpZ2h0aW5nJTIwc3RhZ2UlMjBuaWdodGNsdWIlMjBjb25jZXJ0fGVufDB8fHx8MTc4ODQyMzkzNnww&ixlib=rb-4.1.0&q=85", alt: "DJ performing under stage lights", span: "md:col-span-7" },
-  { src: "https://images.unsplash.com/photo-1769781383545-6b60e30eb88c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTV8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjBjb2NrdGFpbCUyMGJhciUyMGRyaW5rJTIwZ29sZCUyMGF0bW9zcGhlcmV8ZW58MHx8fHwxNzg4NDIzOTM2fDA&ixlib=rb-4.1.0&q=85", alt: "Golden back-bar display", span: "md:col-span-4" },
-  { src: "https://images.unsplash.com/photo-1574155376612-bfa4ed8aabfd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHw0fHxkaiUyMHBlcmZvcm1pbmclMjBwYXJ0eSUyMGxpZ2h0aW5nJTIwc3RhZ2UlMjBuaWdodGNsdWIlMjBjb25jZXJ0fGVufDB8fHx8MTc4ODQyMzkzNnww&ixlib=rb-4.1.0&q=85", alt: "Crowd mid-party", span: "md:col-span-8" },
+  { src: "/venue-singer.webp", alt: "Resident singer live on the Flow stage", span: "md:col-span-5" },
+  { src: "/venue-band.webp", alt: "Live band night at Flow Club", span: "md:col-span-7" },
+  { src: "https://images.unsplash.com/photo-1659626672821-e64c8a510e26?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBuaWdodGNsdWIlMjBwYXJ0eSUyMGxvdW5nZSUyMGdvbGQlMjBsaWdodCUyMG1vb2R8ZW58MHx8fHwxNzg4NDIzOTI3fDA&ixlib=rb-4.1.0&q=85", alt: "Lounge interior in gold light", span: "md:col-span-4" },
+  { src: "/venue-hero.webp", alt: "Acoustic set at Flow Club Pathankot", span: "md:col-span-8" },
 ];
 
 export default function Gallery() {

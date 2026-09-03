@@ -3,8 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Star, MapPin, ArrowDown } from "lucide-react";
 import { EASE } from "@/components/Reveal";
 
-const HERO_IMG =
-  "https://images.unsplash.com/photo-1774989423979-6a7bf5add3f0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjBuaWdodGNsdWIlMjBwYXJ0eSUyMGxvdW5nZSUyMGdvbGQlMjBsaWdodCUyMG1vb2R8ZW58MHx8fHwxNzg4NDIzOTI3fDA&ixlib=rb-4.1.0&q=85";
+const HERO_IMG = "/venue-hero.webp";
 
 function MaskedLine({ children, index, className }) {
   return (
@@ -31,7 +30,7 @@ export default function Hero() {
   return (
     <section ref={ref} data-testid="hero-section" className="relative min-h-screen flex items-end overflow-hidden">
       <motion.div style={{ y: bgY, scale: bgScale }} className="absolute inset-0">
-        <img src={HERO_IMG} alt="Flow Club luxe lounge interior" className="w-full h-full object-cover" />
+        <img src={HERO_IMG} alt="Live singer performing at Flow Club Pathankot" className="w-full h-full object-cover object-[center_20%]" />
       </motion.div>
       <div className="absolute inset-0 bg-gradient-to-t from-[#09090B] via-[#09090B]/55 to-[#09090B]/30" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_35%,#09090B_100%)]" />

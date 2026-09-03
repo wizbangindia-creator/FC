@@ -4,8 +4,8 @@ import { CalendarDays, Clock, Ticket } from "lucide-react";
 import { Reveal, ChapterHeading, EASE } from "@/components/Reveal";
 
 const DJ_IMG = "https://images.unsplash.com/photo-1541126274323-dbac58d14741?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwyfHxkaiUyMHBlcmZvcm1pbmclMjBwYXJ0eSUyMGxpZ2h0aW5nJTIwc3RhZ2UlMjBuaWdodGNsdWIlMjBjb25jZXJ0fGVufDB8fHx8MTc4ODQyMzkzNnww&ixlib=rb-4.1.0&q=85";
-const CROWD_IMG = "https://images.unsplash.com/photo-1574155376612-bfa4ed8aabfd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHw0fHxkaiUyMHBlcmZvcm1pbmclMjBwYXJ0eSUyMGxpZ2h0aW5nJTIwc3RhZ2UlMjBuaWdodGNsdWIlMjBjb25jZXJ0fGVufDB8fHx8MTc4ODQyMzkzNnww&ixlib=rb-4.1.0&q=85";
-const CONSOLE_IMG = "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwxfHxkaiUyMHBlcmZvcm1pbmclMjBwYXJ0eSUyMGxpZ2h0aW5nJTIwc3RhZ2UlMjBuaWdodGNsdWIlMjBjb25jZXJ0fGVufDB8fHx8MTc4ODQyMzkzNnww&ixlib=rb-4.1.0&q=85";
+const CROWD_IMG = "/venue-crowd.webp";
+const BAND_IMG = "/venue-band.webp";
 
 const EVENTS = [
   {
@@ -33,7 +33,7 @@ const EVENTS = [
     time: "7:00 PM onwards",
     entry: "Open seating",
     desc: "Acoustic sets and live vocals over dinner. The slow burn before the week begins.",
-    img: CONSOLE_IMG,
+    img: BAND_IMG,
   },
   {
     title: "Laugh Out Loud",
